@@ -16,6 +16,8 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: grid;
+  align-items: center;
 }
 
 h1,
@@ -56,7 +58,7 @@ fieldset{
   flex-direction: row;
   justify-content: center;
   gap: 30px;
-  padding: 132px 35px 132px 55px;
+  padding: 133px 30px;
   align-items: flex-end;
 }
 
@@ -113,7 +115,7 @@ fieldset{
 
 .search-form__label-text {
   font-size: 18px;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
 }
 
@@ -126,10 +128,11 @@ fieldset{
   display: flex;
   gap: 5px;
   cursor: pointer;
+  align-items: center;
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #fff;
@@ -143,11 +146,11 @@ fieldset{
   border-top: 1px solid currentColor;
   border-bottom: 1px solid currentColor;
   background-color: transparent;
-  width: 225px;
-  height: 27px;
+  min-width: 225px;
+  min-height: 27px;
   appearance: none;
   font-size: 18px;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
 }
 
@@ -169,7 +172,7 @@ fieldset{
 .title {
   color: #fff;
   font-size: 75px;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 70.50px;
@@ -177,11 +180,6 @@ fieldset{
 
 .content__accent {
   color: #545050;
-  font-size: 75px;
-  font-family: Oswald;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 70.50px;
 }
 
 .content__card-link {
@@ -221,23 +219,31 @@ fieldset{
 .content__video-card-title {
   color: #fff;
   font-size: 30px;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 200px;
 }
 
 .content__video-card-description {
   color: #fff;
   font-size: 18px;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   line-height: 16.2px;
   padding-top: 6px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 200px;
 }
 
 .content__list {
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 298px;
   position: relative;
 }
@@ -264,7 +270,7 @@ fieldset{
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -280,7 +286,7 @@ fieldset{
   color: #fff;
   background-color: transparent;
   border: 1px solid currentColor;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: normal;
